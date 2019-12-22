@@ -5,7 +5,7 @@
     <meta name="viewport" content="min-width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="/images/iko.jpg">
+    <link rel="shortcut icon" href="/images/icon2.jpg">
 
     <title>Новости</title>
 </head>
@@ -37,6 +37,9 @@
         .card-text {font-size: 16px}
         .mynav {width: 100%}
         .mynav1 {font-size: 12px}
+        .nav-item {
+            width: 100%;
+        }
     }
     @media screen and (min-width: 768px) {
         .myclass {font-size: 24px;}
@@ -93,7 +96,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link  nav-link border border-white text-white font-weight-bold" href="index1.html">Экономия электроэнергии</a>
+            <a class="nav-link  nav-link border border-white text-white font-weight-bold" href="index1.html">Экономия энергии</a>
         </li>
 
         <li class=" mynav nav-item dropdown">
@@ -130,8 +133,8 @@
             <img src="images/promnsk1.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
                 <h4 class="card-title font-weight-bold">Экологическое положение в атмосфере</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal1">Подробнее</button>
+                <div id="myModal1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
                             <img src="images/promnsk1.jpg" class="card-img-top" alt="1">
@@ -149,14 +152,17 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/pnsk1.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Автотранспорт</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Автотранспортое загрязнение</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal2">Подробнее</button>
+                <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/pnsk1.jpg" class="card-img-top" alt="1">
+                            <p class="card-text">Больше всего на уровень загрязнения в городе влияет автотранспорт. Из самых опасных веществ мутагенного
+                                и канцерогенного характера, которые проникают в атмосферу по причине большого количества автомобилей, можно назвать формальдегид,
+                                бензапирен, а также окись азота и оксид углерода.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -167,14 +173,19 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/vnsk.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Метеорологическое загрязнение</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal3">Подробнее</button>
+                <div id="myModal3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/vnsk.jpg" class="card-img-top" alt="1">
+                            <p class="card-text">Также экологическое положение Новосибирска, равно как и прочих больших городов, находится в зависимости не
+                                только от выбрасываемых в воздух вредных веществ, но и от различных неблагоприятных метеорологических факторов, таких как штили, температурные инверсии,
+                                а также туманы (которые располагают к накоплению вредоносных веществ в приземном слое атмосферы). В общем, рассеивающие способности атмосферы
+                                в Новосибирске гораздо лучше, чем, к примеру, в Восточной Сибири или на Кузбассе, но они все же не достигают надлежащего уровня,
+                                который наблюдается в европейской части России, по этой причине в городе повышен метеорологический потенциал загрязнения.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -186,14 +197,18 @@
     </div>
     <div class="card-deck  mb-3">
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/rnsk.jpeg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Состояние водоемов Новосибирска</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal4">Подробнее</button>
+                <div id="myModal4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/rnsk.jpeg" class="card-img-top" alt="1">
+                            <p class="card-text">Участок Оби,который начинается от Барнаула и протягивается до Новосибирского водохранилища, отличается повышенным уровнем загрязнения.
+                                Новосибирское водохранилище, которое представляет из себя водоем, отличающийся высокой способностью к самоочищению, принимает загрязненную
+                                воду с Алтайского края и улучшает ее уровень до средне загрязненной. Можно наблюдать явную недостачу водоохранных объектов. Река Обь выступает
+                                главным источником, который снабжает город водой.Каждый год из нее расходуется 700 миллионов квадратных метров на нужды населения.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -204,14 +219,22 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/radnsk.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Радиоактивная ситуация в городе</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal5">Подробнее</button>
+                <div id="myModal5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/radnsk.jpg" class="card-img-top" alt="1">
+                            <p class="card-text">Радиационное загрязнение города техногенного характера образовывалось в 40-50-е года прошлого века. Его причинами является деятельность
+                                различных предприятий, а также институтов, которые развивают атомную промышленность. Часть предприятий на сегодняшний день уже прекратила свою работу,
+                                однако до сих пор можно наблюдать последствия от их деятельности. <br>К примеру, были обнаружены 217 зон во всех районах Новосибирска, в которых
+                                повышен уровень радиации. Больше всего зон с радиоактивным загрязнением окружающей среды находится в Калининском районе (131 зона),
+                                здесь же располагается завод химконцентратов. <br>Постоянно проводятся различные работы по утилизации повышенного уровня радиации в городе.
+                                В общем, на данный временной момент радиоактивное положение Новосибирска не такое плохое, как было раньше, но все же есть необходимость в проведении
+                                регулярных мероприятий, которые бы обеспечивали радиационную безопасность в городе.  </p>
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -222,14 +245,17 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/promnsk2.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Промышленные предприятия города</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#myModal6">Подробнее</button>
+                <div id="myModal6" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/promnsk2.jpg" class="card-img-top" alt="1">
+                            <p class="card-text">Новосибирск по своей промышленности выступает одним из самых больших центров Сибири. Приблизительно 20% всей машиностроительной техники изготовляют
+                                предприятия города и его области. Особо выделяются среди них обрабатывающие дерево и металл станки. Также активно развивается цветная и
+                                электроэнергетическая металлургия.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -240,98 +266,6 @@
         </div>
     </div>
 
-
-    <div class="contentmy card mb-3 maxwidth" >
-        <div class="row no-gutters">
-            <div class="col-md-5">
-                <img src="images/pnsk.jpg" class="card-img h-100">
-            </div>
-            <div class="col-md-7">
-                <div class="card-body text-light font-italic font-weight-bold">
-                    <h4 class="myclass1 card-title text-light font-italic font-weight-bold"><u>Автотранспорт</u></h4>
-                    <p class="card-text text-justify"> Больше всего на уровень загрязнения в городе влияет автотранспорт. Из самых опасных веществ мутагенного
-                        и канцерогенного характера, которые проникают в атмосферу по причине большого количества автомобилей, можно назвать формальдегид,
-                        бензапирен, а также окись азота и оксид углерода.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contentmy card mb-3 maxwidth" >
-        <div class="row no-gutters">
-            <div class="col-md-5">
-                <img src="images/vnsk.jpg" class="card-img h-100">
-            </div>
-            <div class="col-md-7">
-                <div class="card-body text-light font-italic font-weight-bold">
-                    <h4 class="myclass1 card-title text-light font-italic font-weight-bold"><u>Метеорологическое загрязнение</u></h4>
-                    <p class="card-text text-justify"> Также экологическое положение Новосибирска, равно как и прочих больших городов, находится в зависимости не
-                        только от выбрасываемых в воздух вредных веществ, но и от различных неблагоприятных метеорологических факторов, таких как штили, температурные инверсии,
-                        а также туманы (которые располагают к накоплению вредоносных веществ в приземном слое атмосферы). В общем, рассеивающие способности атмосферы
-                        в Новосибирске гораздо лучше, чем, к примеру, в Восточной Сибири или на Кузбассе, но они все же не достигают надлежащего уровня,
-                        который наблюдается в европейской части России, по этой причине в городе повышен метеорологический потенциал загрязнения.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contentmy card mb-3 maxwidth" >
-        <div class="row no-gutters">
-            <div class="col-md-5">
-                <img src="images/rnsk.jpeg" class="card-img h-100">
-            </div>
-            <div class="col-md-7">
-                <div class="card-body text-light font-italic font-weight-bold">
-                    <h4 class="myclass1 card-title text-light font-italic font-weight-bold"><u>Состояние водоемов</u></h4>
-                    <p class="card-text text-justify">
-                        Участок Оби,который начинается от Барнаула и протягивается до Новосибирского водохранилища, отличается повышенным уровнем загрязнения.
-                        Новосибирское водохранилище, которое представляет из себя водоем, отличающийся высокой способностью к самоочищению, принимает загрязненную
-                        воду с Алтайского края и улучшает ее уровень до средне загрязненной. Можно наблюдать явную недостачу водоохранных объектов. Река Обь выступает
-                        главным источником, который снабжает город водой.Каждый год из нее расходуется 700 миллионов квадратных метров на нужды населения.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contentmy card mb-3 maxwidth" >
-        <div class="row no-gutters">
-            <div class="col-md-12">
-                <div class="card-body text-light font-italic font-weight-bold">
-                    <h4 class="myclass1 card-title text-light font-italic font-weight-bold"><u>Радиоактивная ситуация в городе</u></h4>
-                    <p class="card-text text-justify">
-                        Радиационное загрязнение города техногенного характера образовывалось в 40-50-е года прошлого века. Его причинами является деятельность
-                        различных предприятий, а также институтов, которые развивают атомную промышленность. Часть предприятий на сегодняшний день уже прекратила свою работу,
-                        однако до сих пор можно наблюдать последствия от их деятельности. <br>К примеру, были обнаружены 217 зон во всех районах Новосибирска, в которых
-                        повышен уровень радиации. Больше всего зон с радиоактивным загрязнением окружающей среды находится в Калининском районе (131 зона),
-                        здесь же располагается завод химконцентратов. <br>Постоянно проводятся различные работы по утилизации повышенного уровня радиации в городе.
-                        В общем, на данный временной момент радиоактивное положение Новосибирска не такое плохое, как было раньше, но все же есть необходимость в проведении
-                        регулярных мероприятий, которые бы обеспечивали радиационную безопасность в городе.  </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contentmy card mb-3 maxwidth" >
-        <div class="row no-gutters">
-            <div class="col-md-5">
-                <img src="images/promnsk2.jpg" class="card-img h-100">
-            </div>
-            <div class="col-md-7">
-                <div class="card-body text-light font-italic font-weight-bold">
-                    <h4 class="myclass1 card-title text-light font-italic font-weight-bold"><u>Промышленные предприятия города l</u></h4>
-                    <p class="card-text text-justify">
-                        Новосибирск по своей промышленности выступает одним из самых больших центров Сибири. Приблизительно 20% всей машиностроительной техники изготовляют
-                        предприятия города и его области. Особо выделяются среди них обрабатывающие дерево и металл станки. Также активно развивается цветная и
-                        электроэнергетическая металлургия.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="contentmy card mb-3 maxwidth" >
         <div class="row no-gutters">
@@ -411,14 +345,23 @@
 
     <div class="card-deck  mb-3">
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/gim111.png" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Разделяй и сохраняй</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard1">Подробнее</button>
+                <div id="mycard1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">СОХРАНЯЕМ ПРИРОДУ ВМЕСТЕ
+                                <br><br>Выражаем благодарность коллективу учителей, учеников и родителей, принявших активное участие в экологической акции «Разделяй и сохраняй».
+                                Общими усилиями мы собрали свыше 23 тонн макулатуры, 36 тысячи батареек и огромное количество пластиковых крышек.
+                                Свыше 1 тонны сдали 3В, 5И, 7Б, 9Г классы. Немного не хватило до тонны 1Б, Г, Е, 2Б классам. Рекордсменом стала семья Закорюкиных (9Г),
+                                которая сдала 1131 кг макулатуры. Так держать!
+                                <br><br>Особо благодарим наших старшеклассников, которые приняли активное участие в приеме макулатуры и погрузочных работах: Похилько Дмитрия,
+                                Ильиных Никиту, Кононова Валерия (11В), Берегового Андрея, Булгакова Артема, Орлова Арсения, Левицкого Андрея (11М), Орлова Арсения,
+                                Левицкого Андрея (10Б) , а также мальчиков 7 В,Г,И классов, которые помогали нашим старшеклассникам. Благодарность Пашковой А., Соколовой К.,
+                                Ощепковой А. (10М), Ереминой А .(10Б), Бедусенко Ю.(9Г), Демидовой У.(9А), которые приняли активное участие в учёте макулатуры и её упаковке
+                                при погрузке.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -429,14 +372,34 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/mat1.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Мать, сдай стеклотару!</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard2">Подробнее</button>
+                <div id="mycard2"class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text text-justify p-3">Почти 700 килограммов баночек из-под детского питания сдали новосибирские мамы.
+
+                                <br><br>Знакомая большинству молодых мам проблема: куда сдать баночки из-под пюре и детских соков — частично была решена в минувшие выходные.
+                                С 23 по 25 ноября в Новосибирске прошла акция «Мать, сдай стеклотару!». Самые активные ее участники получали в подарок детскую кашу, соки и чаи.
+
+                                <br><br>По данным организаторов, за три дня в акции приняли участие около ста человек, которые принесли свыше 630 килограммов стекла.
+
+                                <br><br>— Выбрасывать их не хотелось, а в пунктах приема обычной стеклотары баночки не принимали: дело в том, что собранную там посуду моют и
+                                используют заново, а по санитарным нормам использование бывшей в употреблении тары в детском питании недопустимо. Поэтому я поделилась своей идеей
+                                с Анной Жевачевской, которая является региональным руководителем всероссийского проекта «Сделаем!». Она меня поддержала.
+                                Сданную новосибирцами стеклотару, а это были также бутылки из-под вина и лимонада, стаканы и даже несколько трехлитровых банок,
+                                передадут для дальнейшей переработки: из них на заводе сделают новую посуду, мозаики и прочие товары народного потребления.
+
+                                <br><br>— Прекрасно, что у нас в городе нашлись люди, которые проводят такую акцию! — говорит Татьяна, которая сдала 14 баночек из-под пюре.
+                                — Моей дочке девять месяцев, она активно кушает пюре — баночек полный дом! Жаль, что акция ограничена только тремя днями, я бы еще принесла.
+                                Это не первая совместная работа двух Анн. До этого они организовали проект по раздельному сбору мусора, провели экоуроки для детей,
+                                новосибирскую часть акции «Всероссийская уборка. Сделаем!», мероприятия по приему пластика и макулатуры.
+
+                                <br><br>Результатом акции «Мать, сдай стеклотару!» остались довольны не только ее участники, но и организаторы.
+
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -447,14 +410,124 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/smi.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Конкурс для СМИ</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard3">Подробнее</button>
+                <div id="mycard3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text text-justify p-3">Региональный оператор по обращению с твердыми коммунальными отходами ООО «Экология – Новосибирск»
+                                продолжает прием заявок от представителей средств массовой информации для участия в конкурсе.
+                                <br><br>В начале мая текущего года был объявлен I конкурс профессионального мастерства журналистов «Экология региона – наша работа».
+                                Жюри возглавляет генеральный директор ООО «Экология – Новосибирск» Лариса Анисимова.
+                                Положением о конкурсе предусмотрены три номинации:
+                                <br>- «Реформа отрасли: цели, задачи, результаты» - на лучший материал о реформировании сферы обращения с твердыми коммунальными
+                                отходами на территории Новосибирской области;
+                                <br>- «Проблема и решение» - на лучший материал о проблемах развития отрасли и пути решения;
+                                <br>- «Экология – это мы!» - на лучший материал о проводимых экологических акциях, конкурсах с участием ребят из детских садов,
+                                школ, вузов Новосибирской области.
+                                <br><br>Участниками состязания могут стать журналисты, опубликовавшие в средствах массовой информации (телевидение, радио, интернет-издания, печатные СМИ)
+                                материалы, отвечающие условиям и номинациям конкурса.
+                                <br><br>Итоги I конкурса профессионального мастерства журналистов «Экология региона – наша работа» будут подведены к 31 декабря 2019 года.  </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck  mb-3">
+        <div class="card contentmy">
+            <img src="images/zilt.jpg" class="card-img-top" alt="1">
+            <div class="card-body text-light font-italic">
+                <h4 class="card-title font-weight-bold">Служба Зеленый телефон</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard4">Подробнее</button>
+                <div id="mycard4" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content contentmymod">
+                            <p class="card-text text-justify p-3">Предоставляет бесплатную информацию и консультации для неравнодушных жителей  Советского района, города и
+                                области по различным экологическим проблемам. Служба "Зеленый телефон" организована в 1995 г. в рамках российско-голландского проекта при
+                                поддержке Мильеконтакт Оост Европа и является нашим совместным проектом с администрацей Советского района г. Новосибирска.
+
+                                <br><br>Свой вопрос Вы можете задать, позвонив по телефону +7 (383)363-00-59
+
+                                <br><br>В рамках проекта даются квалифицированные консультации по различным экологическим вопросам:
+                                <br>• состояние лесов и зеленых насаждений;
+                                <br>• состояние водных объектов;
+                                <br>• качество воды, воздуха, почвы;
+                                <br>• экологические права граждан;
+                                <br>• охрана живой природы;
+                                <br>• бытовая экология;
+                                <br>• мусор;
+                                <br>• радиация: вопросы и ответы;
+                                <br>• домашние и дикие животные;
+                                <br>• эксперты, СМИ, государственные службы, общественные экологические организации.
+
+                                <br><br>По наиболее злободневным проблемам, беспокоящих жителей района,  проводятся «горячие линии», а в случае необходимости –
+                                обучающие семинары для активистов ТОС, учителей, старшекласников и др. Соцопросы позволяют отслеживать ситуацию по наиболее
+                                актуальным для жителей экологическим проблемам, и целеноправленно разрабатывать и распространять просветительские и агитационные материалы.
+                                Традиционно сотрудники Службы помогают в организации добровольческих акций по очистке лесов, рек и других незакрепленных территорий от мусора,
+                                в проведении посадок лесных культур и обновлению зеленых насаждений.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card contentmy">
+            <img src="images/ecobilet.jpg" class="card-img-top" alt="1">
+            <div class="card-body text-light font-italic">
+                <h4 class="card-title font-weight-bold">Мусор в обмен на экобилеты</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard5">Подробнее</button>
+                <div id="mycard5" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content contentmymod">
+                            <p class="card-text text-justify p-3">Мэрия Новосибирска объявила об экологической акции, которая будет проходить в городе в течение месяца —
+                                жителям предлагают сдать по 2 килограмма металла или стекла и получить в обмен билет в театр или музей.
+
+                                <br><br>С 12 октября по 15 ноября в Новосибирске прошла масштабная городская экологическая акция "Мусор в обмен на экобилеты".
+                                В разных районах города Новосибирска будут организованы точки приёма вторсырья. Нужно принести алюминий, стекло, пластик или макулатуру
+                                в один из пунктов приема, получить экобилет и обменять его в офисе выдачи билетов на любые культурные мероприятия.
+                                Все сданные в рамках акции отходы поступят на переработку для вторичного использования или утилизации», — сообщает пресс-центр мэрии Новосибирска.
+
+                               </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card contentmy">
+            <img src="images/zelstr.jpg" class="card-img-top" alt="1">
+            <div class="card-body text-light font-italic">
+                <h4 class="card-title font-weight-bold">Зеленые страницы Новосибирска</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard6">Подробнее</button>
+                <div id="mycard6" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content contentmymod">
+                            <p class="card-text text-justify p-3">19 декабря, в четверг, в 18-00 в конференц-зале Новосибирской областной юношеской библиотеки (НОЮБ)
+                                (1 этаж, ул. Красный проспект, 26, ост. "Кинотеатр Маяковского" ) состоится презентация справочника для любителей - озеленителей
+                                "Зеленые страницы Новосибирска".
+                                <br><br>В презентации примут участие создатели справочника — автор идеи, начальник отдела озеленения ГУБО и ПО мэрии г. Новосибирска
+                                Светлана Гижицкая и руководитель проекта, координатор образовательных программ Полевого экологического центра «Дом Совы» Елена Дубынина,
+                                а также приглашенные специалисты в области озеленения, мониторинга и охраны зеленых насаждений.
+                                <br><br>На презентации вы сможете задать свои вопросы по этой очень важной для города теме — об участии общественности в озеленении города.
+                                Все, что вы хотели знать о том, как посадить дерево, чтобы оно долго потом росло, зеленело и радовало всех.. А также о том, что делать,
+                                если: сосед упорно ставит на газон свой мерседес, управляющая компания вырубила тополь во дворе, посаженный вашим дедушкой, а друзья
+                                зовут вас поехать на машинах на майские праздники пожарить шашлыки в Ботсад?
+                                <br><br>В справочник вошли ответы на наиболее часто задаваемые специалистам вопросы и подробные инструкции для разных задач в области городского
+                                озеленения, мониторинга и охраны городских «зеленых» объектов Новосибирска. Все алгоритмы приведены в соответствие с актуальным
+                                законодательством федерального и местного уровня. </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -466,14 +539,36 @@
     </div>
     <div class="card-deck  mb-3">
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/enot2.jpeg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Крышки Енота</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard7">Подробнее</button>
+                <div id="mycard7" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text text-justify p-3">Участие в проекте по сбору крышечек - это самое простое, что может сделать каждый из нас, просто не выбрасывать крышечку в мусор, а сбросить ее в специальный контейнер.
+
+                                <br>Не многие задумаются,что нужно сделать человеку для сотворения настоящего чуда - всего лишь перестать выбрасывать пищевые пластиковые крышечки.
+
+                                <br>Собирайте их ,а потом наполняйте ими ящики с эмблемой проекта и чудо случится!
+
+                                <br>Крышечки будут отправлены на переработку, а все вырученные средства пойдут в благотворительный фонд "Облака" и "Мусора.Больше.Нет, Барнаул".
+
+                                <br>Что можно собирать (отдельно каждый вид вторсырья)
+                                <br>- пластиковые крышечки с маркировкой 2(HPDE) и 5(PP), а также не маркированные
+                                <br>- капроновые крышки от 3л банок
+                                <br>- крышки от кулеров
+                                <br>- металлические крышечки
+                                <br>- ПЭТ - бутылки
+                                <br>- макулатуру
+                                <br>- алюминиевые банки
+
+                                <br>Пластиковые и металлические крышки должны быть чистыми.
+                                Все вторсырье должно быть чистым.
+
+                                <br>Присоединиться к проекту легко:
+                                нужно просто поставить контейнер для сбора крышечек.
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -484,14 +579,35 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/prosvet.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Центр экопросвещения</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard8">Подробнее</button>
+                <div id="mycard8" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text text-justify p-3"> декабря в Новосибирске открылся центр «Просвет». Пространство, где всех желающих будут бесплатно учить
+                                жить без мусора, создали активисты инициативной группы «Живая Земля». Волонтеры почти шесть лет проводят в городе акцию раздельного сбора
+                                отходов «Зеленая белка», продвигая идеи безотходного ведения домашнего хозяйства. Новый центр должен стать штаб-квартирой активистов,
+                                поэтому его уже окрестили «белошной».
+                                <br><br>Помещение помог арендовать грант конкурса «Наша красота – в действии!». Его проводит компания Yves Rocher для поддержки
+                                благотворительных проектов женщин, способствующих изменению жизни к лучшему. Для оформления центра ничего нового не покупали.
+                                Помогали «белки»-волонтеры, участники проектов и неравнодушные горожане: приносили ненужную посуду и предметы быта, работающую технику, мебель.
+                                <br><br>«У нас была задача обустроить удобное пространство, не повышая потребление и, как следствие, не провоцируя производство нового,
+                                с чем мы успешно справились, – рассказала АСИ Анна Вознесенская, руководитель инициативной группы «Живая Земля». – Здесь будут собираться
+                                экологические активисты и делиться опытом. Для горожан мы планируем бесплатные лекции и мастер-классы по сортировке отходов.
+                                Наша задача – обучить новосибирцев жизни в стиле Zero waste: ноль отходов, ноль потерь. В основе этой идеи лежит опыт вдумчивого
+                                потребления и обращения с отходами, не позволяющий образовываться мусору, а значит и свалкам, полигонам. Ноль отходов –
+                                это когда в дело идет все: остатки пищи превращаются в удобрения, старые джинсы становятся модной сумкой, остатки лент и нитей –
+                                декором для дома».
+                                <br><br>На открытие центра пришли активисты общественных экологических проектов: «Крышки енота», «Полезный обмен»,
+                                ЭКОмешочки», «Социальная мобилизация», «Городской огород», «Все субботники». В центре также создана мастерская «Антресоль»,
+                                где общественники и приглашенные мастера будут показывать, как можно превратить  отходы в искусство, сделав что-то полезное и
+                                красивое из ненужной вещи.
+                                <br><br>«Я давно думала о создании мастерской, где в ход идет любая мелочь, – сказала АСИ активист группы «Живая Земля»
+                                Наталья Снегирева, автор проекта, победившего в конкурсе Yves Rocher. – Мы открываем центр, в котором можно послушать экспертов,
+                                поучаствовать в обсуждении какого-то экологического вопроса и сразу же применить полученные знания в реальной жизни. Кроме того,
+                                в Новосибирске есть много профильных учебных заведений, студентам которых будет полезно попрактиковаться в приложении своих творческих способностей до вручения диплома. И результатом таких встреч будут нужные в хозяйстве вещи, а не только предметы декора».</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -502,69 +618,30 @@
         </div>
 
         <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
+            <img src="images/zelbelka.jpg" class="card-img-top" alt="1">
             <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <h4 class="card-title font-weight-bold">Зеленая белка</h4>
+                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target="#mycard9">Подробнее</button>
+                <div id="mycard9" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card-deck  mb-3">
-        <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
-            <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <p class="card-text text-justify p-3">В Новосибирске прошла третья в этом году акция по раздельному сбору отходов «Зелёная белка».
+                                За день новосибирцы принесли на точки сбора 150 кубометров мусора.
 
-        <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
-            <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                <br><br>«Вчера был прямо аншлаг.Были отдельно машины для макулатуры, для пластика и прочего. Также на центральном маршруте собирали
+                                органику для пилотного проекта по городским огородам. Население нам сдает макулатуру, несколько видов пластика, стекло, батарейки и
+                                неработающую технику, все это отправляется на переработку.
+                                <br><br>Мы работаем с компанией «Тайгер-Сибирь», которая устанавливает и обслуживает контейнеры для раздельного сбора в Новосибирске», —
+                                объяснила корреспонденту НГС организатор акции Светлана Братющенко.
+                                <br><br>По словам Светланы, Новосибирск входит в число лидеров по количеству контейнеров для раздельного сбора мусора. Стекло перерабатывают в
+                                нашем городе, пластик — частично тоже.
 
-        <div class="card contentmy">
-            <img src="..." class="card-img-top" alt="1">
-            <div class="card-body text-light font-italic">
-                <h4 class="card-title font-weight-bold">Название карточки</h4>
-                <button type="button" class="btn btn-primary active border border-white text-white bg-success" data-toggle="modal" data-target=".bd-example-modal-lg">Подробнее</button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content contentmymod">
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <br><br>«У нас недавно появился завод по переработке батареек (второй в России после Челябинска). Макулатуру отправляют на Урал, в Новосибирске
+                                практически нет её переработки», — пояснила организатор.
+
+                                <br><br>За день «экомобиль» объехал 17 точек в городе. Собранный мусор занял 6 грузовиков.
+
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button " class="btn btn-primary active border border-white text-white bg-success" data-dismiss="modal">Закрыть</button>
@@ -584,16 +661,11 @@
         </div>
     </div>
 
-    <form>
-        <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Напишите здесь!"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary active border border-white text-white bg-success">Отправить</button>
-    </form>
-
-
-
-
+    <div text-center align-self-center>
+        <form action="mailto:xodakova85@mail.ru" enctype="text/plain">
+            <button type="submit" class="btn btn-primary active border border-white text-white bg-success">Напишите нам!</button>
+        </form>
+    </div>
 
     <div class="row mt-5">
         <div class="col align-self-center text-justify text-light font-italic">
